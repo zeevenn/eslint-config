@@ -1,5 +1,5 @@
 {
-  "name": "@ziven/eslint-config-prettier",
+  "name": "@zeevenn/eslint-config-prettier",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.17.0",
