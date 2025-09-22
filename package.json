@@ -19,20 +19,26 @@
   },
   "types": "./src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "tsdown": "tsdown",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/lodash": "^4.17.20",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "jiti": "^2.5.1",
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
+    "rollup": "^4.52.0",
     "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.15.4",
+    "tslib": "^2.8.1",
     "typescript": "^5.9.2"
   },
   "simple-git-hooks": {
