@@ -18,6 +18,9 @@
     }
   },
   "types": "./src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "tsdown": "tsdown",
