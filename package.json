@@ -1,7 +1,7 @@
 {
-  "name": "@ziven/eslint-config-prettier",
+  "name": "@zeevenn/eslint-config-prettier",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "packageManager": "pnpm@10.17.0",
   "description": "ESLint with Prettier",
   "author": "ziven <contact@ziven.me>",
@@ -18,15 +18,20 @@
     }
   },
   "types": "./src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "tsdown": "tsdown",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
+    "release": "release-it",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@rollup/plugin-typescript": "^12.1.4",
     "@types/lodash": "^4.17.20",
     "eslint": "^9.36.0",
@@ -35,11 +40,32 @@
     "jiti": "^2.5.1",
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
+    "release-it": "^19.0.5",
     "rollup": "^4.52.0",
     "simple-git-hooks": "^2.13.1",
     "tsdown": "^0.15.4",
     "tslib": "^2.8.1",
     "typescript": "^5.9.2"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "angular"
+        }
+      }
+    }
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

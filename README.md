@@ -1,4 +1,4 @@
-# @ziven/eslint-config-prettier
+# @zeevenn/eslint-config-prettier
 
 A perfect combination of ESLint and Prettier configuration.
 
@@ -11,13 +11,13 @@ This configuration package integrates [@antfu/eslint-config](https://github.com/
 ## Usage
 
 ```bash
-pnpm add -D @ziven/eslint-config-prettier
+pnpm add -D @zeevenn/eslint-config-prettier
 ```
 
 In your `eslint.config.mjs`:
 
 ```ts
-import { defineConfig } from '@ziven/eslint-config-prettier'
+import { defineConfig } from '@zeevenn/eslint-config-prettier'
 
 // All options are the same as @antfu/eslint-config
 export default defineConfig()
