@@ -38,6 +38,7 @@
     "@types/lodash": "^4.17.20",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-prettier": "^5.5.4",
     "jiti": "^2.5.1",
     "lint-staged": "^16.1.6",
