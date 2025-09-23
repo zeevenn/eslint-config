@@ -1,10 +1,12 @@
+import type { Linter } from 'eslint'
 import antfu from '@antfu/eslint-config'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export async function defineConfig(...args: Parameters<typeof antfu>) {
   const configs = await antfu(...args)
 
-  const prettierConfig = {
+  const prettierConfig: Linter.Config<Linter.RulesRecord> = {
+    name: 'zeevenn/prettier',
     rules: {
       'prettier/prettier': [
         'error',
@@ -13,6 +15,7 @@ export async function defineConfig(...args: Parameters<typeof antfu>) {
           usePrettierrc: true,
         },
       ],
+      'style/arrow-parens': 'off',
     },
   }
 
@@ -21,6 +24,7 @@ export async function defineConfig(...args: Parameters<typeof antfu>) {
     prettierConfig,
     eslintPluginPrettierRecommended,
     {
+      name: 'zeevenn/md',
       files: ['**/*.md'],
       rules: {
         'prettier/prettier': 'off',
