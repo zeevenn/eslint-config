@@ -1,5 +1,17 @@
 # Changelog
 
+# [0.2.0](https://github.com/zeevenn/eslint-config-prettier/compare/v0.1.0...v0.2.0) (2025-09-25)
+
+
+### Bug Fixes
+
+* style/arrow-parens conflict ([23f157d](https://github.com/zeevenn/eslint-config-prettier/commit/23f157d965a16c18891616735798da5e07fc7ac7))
+
+
+### Features
+
+* rename all prettier rules ([bccf636](https://github.com/zeevenn/eslint-config-prettier/commit/bccf636cdbfd1dbb79089cc7e041c9633d595e7e))
+
 # 0.1.0 (2025-09-22)
 
 
