@@ -7,7 +7,13 @@ const config: RollupOptions = {
     file: 'dist/index.js',
     format: 'esm',
   },
-  external: ['@antfu/eslint-config', 'eslint-plugin-prettier/recommended'],
+  external: [
+    '@antfu/eslint-config',
+    'eslint-config-prettier',
+    'eslint-flat-config-utils',
+    'eslint-plugin-prettier',
+    'eslint-plugin-prettier/recommended',
+  ],
   plugins: [
     typescript({
       declaration: true,
