@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/zeevenn/eslint-config-prettier/compare/v0.2.1...v0.2.2) (2025-09-25)
+
+
+### Bug Fixes
+
+* package not found ([e52f6ea](https://github.com/zeevenn/eslint-config-prettier/commit/e52f6ea919019d3d18eeaf4da3fed030ecad438f))
+
 ## [0.2.1](https://github.com/zeevenn/eslint-config-prettier/compare/v0.2.0...v0.2.1) (2025-09-25)
 
 # [0.2.0](https://github.com/zeevenn/eslint-config-prettier/compare/v0.1.0...v0.2.0) (2025-09-25)
