@@ -1,23 +1,17 @@
-# @zeevenn/eslint-config-prettier
+# @zeevenn/eslint-config
 
-A perfect combination of ESLint and Prettier configuration.
-
-## Why this configuration?
-
-While ESLint can fix code errors and some formatting issues, it has limitations when handling code style aspects such as indentation, line length, and line breaks.
-
-This configuration package integrates [@antfu/eslint-config](https://github.com/antfu/eslint-config) and Prettier.
+A combination of [@antfu/eslint-config](https://github.com/antfu/eslint-config) and Prettier configuration.
 
 ## Usage
 
 ```bash
-pnpm add -D @zeevenn/eslint-config-prettier
+pnpm add -D @zeevenn/eslint-config
 ```
 
 In your `eslint.config.mjs`:
 
 ```ts
-import { defineConfig } from '@zeevenn/eslint-config-prettier'
+import { defineConfig } from '@zeevenn/eslint-config'
 
 // All options are the same as @antfu/eslint-config
 export default defineConfig()
