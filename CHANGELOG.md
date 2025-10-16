@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/zeevenn/eslint-config-prettier/compare/v0.2.2...v0.2.3) (2025-10-16)
+
+
+### Bug Fixes
+
+* conflict with antfu/if-newline ([2519fd4](https://github.com/zeevenn/eslint-config-prettier/commit/2519fd43c3e88e480e428db05a2fa66538281d20))
+
 ## [0.2.2](https://github.com/zeevenn/eslint-config-prettier/compare/v0.2.1...v0.2.2) (2025-09-25)
 
 
