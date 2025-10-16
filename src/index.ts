@@ -33,6 +33,8 @@ export async function defineConfig(...args: Parameters<typeof antfu>): Promise<L
           usePrettierrc: true,
         },
       ],
+      // conflict with prettier
+      'antfu/if-newline': 'off',
     },
   }
 
